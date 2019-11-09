@@ -11,7 +11,7 @@ import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
-import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+// import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
 import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
@@ -38,7 +38,7 @@ ClassicEditor.builtinPlugins = [
 	Bold,
 	Italic,
 	Underline,
-	Strikethrough,
+	// Strikethrough,
 	Code,
 	Subscript,
 	Superscript,
@@ -69,7 +69,7 @@ ClassicEditor.defaultConfig = {
 			'bold',
 			'italic',
 			'underline',
-			'strikethrough',
+			// 'strikethrough',
 			'subscript',
 			'superscript',
 			'|',
