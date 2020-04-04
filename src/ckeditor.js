@@ -17,7 +17,7 @@ import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
 import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
 import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
-import Title from '@ckeditor/ckeditor5-heading/src/title';
+// import Title from '@ckeditor/ckeditor5-heading/src/title';
 import Indent from '@ckeditor/ckeditor5-indent/src/indent';
 import IndentBlock from '@ckeditor/ckeditor5-indent/src/indentblock';
 import Link from '@ckeditor/ckeditor5-link/src/link';
@@ -43,7 +43,7 @@ ClassicEditor.builtinPlugins = [
 	Subscript,
 	Superscript,
 	Heading,
-	Title,
+	// Title,
 	Alignment,
 	Indent,
 	IndentBlock,
@@ -59,6 +59,7 @@ ClassicEditor.builtinPlugins = [
 
 // Editor configuration.
 ClassicEditor.defaultConfig = {
+	placeholder: '点击这里输入或粘贴内容',
 	toolbar: {
 		items: [
 			'undo',
