@@ -11,6 +11,7 @@ import Autoformat from '@ckeditor/ckeditor5-autoformat/src/autoformat';
 import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
 import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
 // import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
 import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
@@ -39,6 +40,7 @@ ClassicEditor.builtinPlugins = [
 	Bold,
 	Italic,
 	Underline,
+	BlockQuote,
 	// Strikethrough,
 	Code,
 	Subscript,
@@ -56,7 +58,7 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	PageBreak,
 	RemoveFormat,
-	HeadingIdAttribute
+	HeadingIdAttribute,
 ];
 
 // Editor configuration.
@@ -72,6 +74,7 @@ ClassicEditor.defaultConfig = {
 			'bold',
 			'italic',
 			'underline',
+			'blockquote',
 			// 'strikethrough',
 			'subscript',
 			'superscript',
