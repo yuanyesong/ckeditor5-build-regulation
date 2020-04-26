@@ -29,7 +29,7 @@ import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import PageBreak from '@ckeditor/ckeditor5-page-break/src/pagebreak';
 import RemoveFormat from '@ckeditor/ckeditor5-remove-format/src/removeformat';
-import HeadingIdAttribute from './plugin/HeadingIdAttribute';
+// import HeadingIdAttribute from './plugin/HeadingIdAttribute';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -58,7 +58,7 @@ ClassicEditor.builtinPlugins = [
 	TableToolbar,
 	PageBreak,
 	RemoveFormat,
-	HeadingIdAttribute,
+	// HeadingIdAttribute,
 ];
 
 // Editor configuration.

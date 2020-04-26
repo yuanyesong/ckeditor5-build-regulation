@@ -37,12 +37,18 @@ export default class HeadingIdAttribute extends Plugin {
 
 			for ( const change of changes ) {
 				// Check heading nodes on insert.
+				// console.log( change );
 				if ( change.type == 'insert' && isHeading( change.name ) ) {
 					const heading = change.position.nodeAfter;
 
 					// Set 'id' attribute when it is missing in the model.
 					if ( !heading.hasAttribute( 'id' ) ) {
-						writer.setAttribute( 'id', generateToken(), heading );
+						writer.setAttribute(
+							'id',
+							// getHeadingText( heading ).replace( /\s/g, '' ),
+							generateToken(),
+							heading
+						);
 
 						// Return true to notify that model was altered.
 						wasChanged = true;
@@ -58,6 +64,21 @@ export default class HeadingIdAttribute extends Plugin {
 		function isHeading( name ) {
 			return name.slice( 0, -1 ) == 'heading';
 		}
+
+		// function getHeadingText( heading ) {
+		// 	const children = heading.getChildren();
+		// 	let textContent = '';
+		// 	for ( const child of children ) {
+		// 		if ( child.is( 'text' ) ) {
+		// 			textContent = textContent + child.data;
+		// 			console.log( textContent );
+		// 		} else {
+		// 			textContent = textContent + getHeadingText( child );
+		// 		}
+		// 	}
+		// 	return textContent;
+		// }
+
 		function generateToken() {
 			return 's' + randomBytes( 3 ).toString( 'hex' );
 		}

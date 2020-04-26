@@ -214,6 +214,11 @@
     "@ckeditor/ckeditor5-core" "^15.0.0"
     "@ckeditor/ckeditor5-utils" "^15.0.0"
 
+"@ckeditor/ckeditor5-inspector@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-inspector/download/@ckeditor/ckeditor5-inspector-2.0.0.tgz#378ef4ca5dbdf652b04b50ca9455b3f5b00aa899"
+  integrity sha1-N470yl299lKwS1DKlFWz9bAKqJk=
+
 "@ckeditor/ckeditor5-link@^15.0.0":
   version "15.0.0"
   resolved "https://registry.npm.taobao.org/@ckeditor/ckeditor5-link/download/@ckeditor/ckeditor5-link-15.0.0.tgz#b588f96fcfe539f6f5dacff0f021a3ba9964c722"
